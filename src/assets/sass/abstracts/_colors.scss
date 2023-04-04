@@ -1,0 +1,32 @@
+/*
+* Colors
+*/
+
+// All used colors
+$color-light: #fff;
+$color-dark: #333333;
+$color-gray-light: #E8E8E8;
+$color-gray-dark: #9D9D9D;
+$color-primary: #4EA1DD;
+$color-primary-dark: #1880CA;
+$color-primary-light: #F1F3F5;
+$color-primary-light-hover: #E4EDF6;
+$color-danger: #E15A5A;
+
+// Fonts
+$color-font-light: $color-light;
+$color-font-dark: $color-dark;
+$color-font-highlight: $color-primary;
+$color-font-highlight-dark: $color-primary-dark;
+$color-font-gray-dark: $color-gray-dark;
+$color-font-danger: $color-danger;
+
+// Backgrounds
+$color-bg-light: $color-light;
+$color-bg-dark: $color-dark;
+$color-bg-primary: $color-primary;
+$color-bg-primary-light: $color-primary-light;
+$color-bg-primary-light-hover: $color-primary-light-hover;
+
+// Borders
+$color-border-light: $color-gray-light;

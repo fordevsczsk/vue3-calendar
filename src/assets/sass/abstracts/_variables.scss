@@ -1,0 +1,32 @@
+/*
+* Variables
+*/
+
+@use "functions" as *;
+
+// Layout
+$container-mobile-side-spaces: rem(16);
+$container-desktop-side-spaces: rem(24);
+
+// Header & footer heights
+$header-height-mobile: rem(64);
+$header-height-desktop: rem(72);
+$footer-height-desktop: rem(72);
+
+// Media queries
+$media-phone-portrait-max: rem(479);
+$media-phone-landscape-min: rem(480);
+$media-phone-landscape-max: rem(767);
+$media-tablet-min: rem(768);
+$media-tablet-max: rem(1023);
+$media-desktop-min: rem(1024);
+$media-desktop-max: rem(1439);
+$media-wide-min: rem(1440);
+$media-full-hd-min: rem(1920);
+
+// Animation durations
+$animation-duration-medium: 0.35s;
+
+// Shadows
+$box-shadow-primary: 0 0 rem(8) rgba(0, 0, 0, .2);
+$box-shadow-large: 0 0 rem(32) rgba(0, 0, 0, .08);

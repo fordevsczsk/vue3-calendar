@@ -1,0 +1,10 @@
+/*
+* Functions
+*/
+
+@use "sass:math";
+
+// Function to convert px value into rem
+@function rem($target, $context: 16) {
+	@return math.div($target, $context) * 1rem;
+}

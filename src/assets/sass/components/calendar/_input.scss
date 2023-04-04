@@ -1,0 +1,88 @@
+/* 
+* Input calendar
+*/
+
+@use "@/assets/sass/abstracts/abstracts" as *;
+
+.input-calendar {
+    display: flex;
+    flex-direction: column;    
+    gap: rem(8);
+
+    @media (min-width: $media-tablet-min) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: rem(12);
+    }
+
+    &__label {
+        font-weight: 600;
+        white-space: nowrap;
+    }
+
+    &__calendar {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex: 1 1 auto;
+        width: 100%;
+
+        @media (min-width: $media-tablet-min) {
+            flex: 0 1 rem(360);
+        }
+
+        .is-vertical & {
+            flex-basis: auto;
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: rem(40);
+        padding: 0 rem(16);
+        border-radius: rem(8);
+        border: none;
+        cursor: pointer;
+        color: $color-font-gray-dark;
+        background-color: $color-bg-primary-light;
+
+        &.is-selected {
+            color: $color-font-dark;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: $color-bg-primary-light-hover;
+        }
+    }
+
+    &__calendar-wrapper {
+        position: absolute;
+        top: calc(100% + rem(8));
+        left: 0;
+        display: none;
+        width: 100%;
+        padding: rem(16);
+        max-height: rem(400); //@todo???
+        overflow: auto;
+        background-color: $color-bg-light;
+        z-index: 2;
+        border-radius: rem(8);
+        border: rem(1) solid $color-border-light;
+        box-shadow: rem(0) rem(0) rem(16) rgba($color-bg-dark, 0.25);
+        transition: all 0.25s;
+
+        &.is-active {
+            display: inline-block;
+            z-index: 9;
+        }
+    }
+
+    &__icon {
+        width: rem(16);
+    }
+}
